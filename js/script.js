@@ -26,4 +26,7 @@ fetch(DATA_URL)
   })
   .then(data => {
     showData(data.students);
+  })
+  .catch(error => {
+    console.error('Error with data Fetch:', error);
   });
